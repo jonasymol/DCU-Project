@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+   
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"> </script>
+		 <script type="text/javascript" src="json2.js"></script>
+		
+        <title>DAW Project</title>
+    </head>
+    <body>
+	<div data-role="page" id="home">
+ 
+			<div data-role="header">
+			<h1>Frases-Lugares</h1>
+			</div>
+			<div data-role="content">
+				<div id="galeria">  </div>
+				
+			</div>
+			 <div data-role="footer">
+					<div data-role="navbar">
+					<ul>
+					<li><a href="#home" data-transition="slide" data-icon="home">Home</a></li>
+					<li><a href="#sitio" data-transition="slide" data-icon="plus">Agregar Sitio</a></li>
+					<li><a href="#historia" data-transition="slide" data-icon="star">Historia</a></li>
+					</ul>
+					</div>
+			</div>
+    
+   
+    
+  </div>
+  
+  	<div data-role="page" id="sitio">
+ 
+			<div data-role="header">
+			<h1>Frases-Lugares</h1>
+			</div>
+			<div data-role="content">
+			
+			
+			
+			<div class="row" id="formulario">
+            
+            <div class="col">
+			    <div class="list list-inset">
+				
+						<label class="item item-input">
+						<input title="Se requiere Frase" maxlength="100" type="text" placeholder="Frase o Pensamiento" id="Frasetxt" required/>
+                      </label>
+              
+                      <label class="item item-input">
+						<input title="Se requiere nombre del lugar" maxlength="20" type="text" placeholder="Lugar" id="Lugartxt" required/>
+                      </label>
+
+                      <label class="item item-input">
+                        <input title="Se requiere año"type="text" maxlength="4"pattern="d{4}" placeholder="Año" id="Aniotxt" required/>
+                      </label>
+
+                     
+
+                     
+
+                  </div>
+			
+				</div>
+				
+				 
+				
+				<button id="boton-guardar">
+                          Insertar
+                      </button>
+				</div>
+				
+				
+				
+			</div>
+			 <div data-role="footer">
+					<div data-role="navbar">
+					<ul>
+				<li><a href="#home" data-transition="slide" data-icon="home">Home</a></li>
+					<li><a href="#sitio" data-transition="slide" data-icon="plus">Agregar Sitio</a></li>
+					<li><a href="#historia" data-transition="slide" data-icon="star">Historia</a></li>
+					</ul>
+					</div>
+			</div>
+    
+   
+    
+  </div>
+  
+  
+                
+          
+ 	<div data-role="page" id="historia" >
+ 
+			<div data-role="header">
+			<h1>Frases-Lugares</h1>
+			</div>
+			<div data-role="content">
+		  <p style= "text-align: center" id="Frases" >  </p> 
+         
+        <ul data-role="listview" id="Lista">
+ 
+        </ul>
+		<div class="ui-grid-a">
+		  <button  id="boton-cargar">
+                        Cargar
+                    </button>
+					<button  id="boton-borrar">
+                        Borrar Todo
+                    </button>
+                 </div>   
+		  
+		  </div>
+			 <div data-role="footer">
+					<div data-role="navbar">
+					<ul>
+					<li><a href="#home" data-transition="slide" data-icon="home">Home</a></li>
+					<li><a href="#sitio" data-transition="slide" data-icon="plus">Agregar Sitio</a></li>
+					<li><a href="#historia" data-transition="slide" data-icon="star">Historia</a></li>
+					</ul>
+					</div>
+			</div>
+ 
+ 
+ 
+
+      
+    </body>
+</html>
